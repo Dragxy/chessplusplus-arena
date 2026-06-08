@@ -2,7 +2,7 @@
 
 The arena runs two `a2` binaries against each other. Two processes play the **same** game:
 the side to move is decided by its own binary, and that move is relayed to the other process
-so both boards stay in sync. The referee (`arena/duel.py`) only writes to your **stdin** and
+so both boards stay in sync. The referee (`duel.py`) only writes to your **stdin** and
 reads your **stderr** — `stdout` is ignored.
 
 To make your code arena-ready, add two things.
@@ -97,10 +97,10 @@ where state_token and winner can be:
 ## Run a duel
 
 ```bash
-arena/duel.py arena/bots/my_bot_v1 arena/bots/archmage_v1.1
+./duel.py bots/my_bot_v1 bots/archmage_v1.1
 ```
 
-Both bots play all configs in `arena/configs/`, with colours swapped for fairness (so each
+Both bots play all configs in `configs/`, with colours swapped for fairness (so each
 config is played twice). Useful flags:
 
 - `--time-ms <n>` — per-move budget for both bots (sets `BOT_TIME_MS`)
@@ -109,7 +109,7 @@ config is played twice). Useful flags:
 
 ## Where to see results
 
-Each run writes a folder `arena/results/<botA>_vs_<botB>_<timestamp>/` containing:
+Each run writes a folder `results/<botA>_vs_<botB>_<timestamp>/` containing:
 
 - **`summary.txt`** — win/draw counts, decisive win-rate, per-colour breakdown, end states.
   This is the "did A beat B" number. It is also printed to the terminal at the end.

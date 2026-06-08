@@ -73,7 +73,7 @@ In code it might look a little like this:
 std::cerr << "@PROMPT " << (current_player_->getColor()) << "\n";
 if (input == "play")
     {
-      input = ai::decidePlacement(*this, piece_id, back_rank_num - 1);
+      input = ai::decideMove();
       std::cerr << "@MOVE " << input << "\n";
     }
 ```

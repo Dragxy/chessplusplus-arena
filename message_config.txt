@@ -1,0 +1,97 @@
+MESSAGE
+E_UNKNOWN_COMMAND:Invalid command entered.
+E_INVALID_PARAM_COUNT:The command was not supplied the correct number of parameters.
+E_SPECIAL_USE_UNAVAILABLE:The special and use commands are locked for this turn.
+E_INV_PARAM_PLAYER:This player does not exist.
+E_INV_PARAM_SQUARE:The square is invalid.
+E_INV_PARAM_PIECE:Invalid Piece ID.
+E_PLAYER_PIECE_NOT_FOUND:The specified square does not contain one of your pieces.
+E_NO_SPECIAL_POWER:This piece does not have a special power.
+E_INVALID_PARAM_COUNT_SPECIAL:The special power was not supplied the correct number of parameters.
+E_PIECE_FROZEN:This piece is currently frozen.
+E_INV_PARAM_SPECIAL_SQUARE:The target square is invalid.
+E_INV_PARAM_PIECE_TYPE:The piece type is invalid.
+E_INV_PARAM_TURN_COUNT:The number of turns is invalid.
+E_UNWAVERING_FAITH:Another preacher bishop cannot be converted.
+E_INVALID_ARCHER_TARGET:The target square is not in archer range.
+E_OPPONENT_PIECE_NOT_FOUND:The target square does not contain an enemy piece.
+E_INV_PARAM_MOVE:The move syntax is not valid.
+E_INVALID_MOVE:This move is currently not possible.
+E_INSUFFICIENT_MANA:You don't have enough mana to perform this action.
+E_NO_POTION_FOUND:This piece does not have a potion.
+E_INVALID_PARAM_COUNT_USE:The potion was not supplied the correct number of parameters.
+E_INV_PARAM_USE:The potion's parameters are invalid.
+E_INVALID_PASS:Passing is currently not possible.
+E_INV_PARAM_YES_NO:The valid inputs are either yes or no.
+E_INVALID_PATH:The output file could not be opened for writing.
+
+D_N_P:Pawn
+D_N_R:Rook
+D_N_N:Knight
+D_N_B:Bishop
+D_N_Q:Queen
+D_N_K:King
+D_N_PGLD:Golden Pawn
+D_N_PIPT:Impatient Pawn
+D_N_PSTB:Stubborn Pawn
+D_N_PNRV:Nervous Pawn
+D_N_PEXP:Explosive Pawn
+D_N_RINV:Invincible Rook
+D_N_RPNT:Painter Rook
+D_N_NJMP:Jumpy Knight
+D_N_NICE:Ice Knight
+D_N_BCLR:Color Blind Bishop
+D_N_BPRC:Preacher Bishop
+D_N_QFLP:Flipper Queen
+D_N_QJMP:Jumpy Queen
+D_N_QHNGR:Hungry Queen
+D_N_KFRT:Frightened King
+D_N_KARC:Archer King
+
+D_I_P:Can move forwards and capture diagonally.
+D_I_R:Can move horizontally or vertically.
+D_I_N:Can jump over other pieces.
+D_I_B:Can move diagonally.
+D_I_Q:Can move in any direction.
+D_I_K:Can move one square in any direction.
+D_I_PGLD:Immediately win the game if the pawn reaches the opponent's back rank.
+D_I_PIPT:Can promote before reaching the back rank.
+D_I_PSTB:Can capture forward using its special.
+D_I_PNRV:Can move backwards one square using its special.
+D_I_PEXP:Destroys all non-pawn pieces in its adjacent squares including itself when it captures a piece.
+D_I_RINV:Can neither move nor be captured for a number of turns.
+D_I_RPNT:When moving using special, it paints all squares in its path in the color of its start-game square.
+D_I_NJMP:Moves in an bigger L shape. (3 + 2 instead of 2 + 1).
+D_I_NICE:All pieces jumped over by the knight freeze for one turn.
+D_I_BCLR:Can use their special to move like a King for one turn.
+D_I_BPRC:The Preacher Bishop can convert an opponent piece to the players color.
+D_I_QFLP:When using special can bounce off one wall when moving in a diagonal.
+D_I_QJMP:Can jump over pieces like a knight if using its special.
+D_I_QHNGR:Friendly pieces can also be captured.
+D_I_KFRT:Can move two squares in any direction if in check, but cannot capture pieces.
+D_I_KARC:Shoots a frozen arrow at an opponent piece directly in front of it freezing it for one turn.
+
+
+D_S_PIPT:<SQUARE> <PIECE_TYPE>
+D_S_PSTB:<SQUARE>
+D_S_PNRV:<SQUARE>
+D_S_PEXP:<SQUARE> <TARGET_SQUARE>
+D_S_RINV:<SQUARE> <TURN_COUNT>
+D_S_RPNT:<SQUARE> <TARGET_SQUARE>
+D_S_BCLR:<SQUARE> <TARGET_SQUARE>
+D_S_BPRC:<SQUARE> <TARGET_SQUARE>
+D_S_QFLP:<SQUARE> <BOUNCE_SQUARE> <TARGET_SQUARE>
+D_S_QJMP:<SQUARE> <TARGET_SQUARE>
+D_S_KARC:<SQUARE> <TARGET_SQUARE>
+
+D_AMBIGUOUS_MOVE:The move is ambiguous. Specify the square to be moved or cancel.\n
+
+
+D_BORDER_INFO_B:=== Info =========================================
+D_BORDER_INFO_E:==================================================
+D_BORDER_D:~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
+D_WELCOME:                Welcome To Chess++
+D_CHESSBOARD_BORDER:                    Chessboard
+D_BORDER_HISTORY:~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
+D_HISTORY_HEADER:                   Move History
+D_BORDER_PRISON:~*~*~*~*~*~*~*~*~*~*~*Prison~*~*~*~*~*~*~*~*~*~*~*

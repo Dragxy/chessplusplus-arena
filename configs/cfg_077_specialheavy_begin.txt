@@ -1,0 +1,20 @@
+GAME
+
+turns: 100
+mana: 60/300
+
+White (Elo = 1000)
+{
+  PEXP, P, P, PSTB, PIPT, PSTB, PSTB, PGLD
+  R, RPNT, NJMP, K, N, BCLR, B, QFLP
+}
+
+Black (Elo = 1000)
+{
+  PEXP, P, P, PSTB, PIPT, PSTB, PSTB, PGLD
+  R, RPNT, NJMP, K, N, BCLR, B, QFLP
+}
+
+Squares
+{
+}

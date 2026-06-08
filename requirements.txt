@@ -1,0 +1,2 @@
+# duel.py uses only the Python standard library, no third-party packages required.
+# Needs Python 3.8+ (3.12 tested). The arena is Linux/WSL only (relies on /proc and signals).
